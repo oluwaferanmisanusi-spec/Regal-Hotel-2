@@ -1,0 +1,9 @@
+/*******************************/
+/* Room Cards */
+/*******************************/
+
+@media (min-width: 1301px) {
+  .rooms-slider .splide__track {
+    overflow: visible;
+  }
+}

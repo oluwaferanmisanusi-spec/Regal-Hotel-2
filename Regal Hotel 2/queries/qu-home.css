@@ -1,0 +1,274 @@
+/*******************************/
+/* Below 1230px (landscape tablet) */
+/*******************************/
+
+@media (max-width: 77em) {
+  html {
+    /* 9px/16px= 0.5625 = 56.25% */
+    font-size: 56.25%;
+  }
+  body {
+    max-width: 100%;
+  }
+}
+
+/*******************************/
+/* Below 1110px  */
+/*******************************/
+@media (max-width: 69em) {
+  html {
+    /* 8px/16px= 0.5 = 50% */
+    font-size: 50%;
+  }
+}
+
+/*******************************/
+/* Below 970px  */
+/*******************************/
+@media (max-width: 61em) {
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(24, 25, 32, 0.16);
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* backdrop-filter: blur(10px); */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    transform: translateX(100%);
+    margin-right: 0;
+    backdrop-filter: blur(2px);
+
+    /* padding-right: 5rem; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-items: center; */
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    z-index: 9999;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    /* justify-self: center; */
+    /* justify-items: center; */
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .nav {
+    /* justify-content: center; */
+    margin-bottom: 60%;
+  }
+
+  /* Home */
+
+  .about-us__content {
+    flex-direction: column;
+  }
+
+  .about-us__img {
+    width: 80%;
+    align-self: center;
+  }
+
+  .about-us__text {
+    text-align: center;
+  }
+
+  .quote-text {
+    padding: 10rem 15rem 0 15rem;
+  }
+
+  .section-1 {
+    flex-direction: column-reverse;
+    gap: 7rem;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .download-text {
+    text-align: center;
+  }
+
+  .download-text-2 {
+    text-align: center;
+  }
+
+  .footer-img {
+    display: block;
+    justify-self: center;
+  }
+
+  .primary-heading {
+    font-size: 4rem;
+  }
+
+  .secondary-heading {
+    font-size: 3rem;
+  }
+
+  .header-text:link,
+  .header-text:visited,
+  .header-text:hover,
+  .header-text:active {
+    font-size: 2.5rem;
+  }
+
+  .img-play-btn {
+    width: 50%;
+  }
+
+  /* Rooms */
+
+  .hotel-rooms-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* facilities */
+
+  .services-text {
+    font-size: 3rem;
+  }
+
+  .reservation-text {
+    font-size: 3.8rem;
+  }
+
+  /* contact */
+
+  .contact {
+    flex-direction: column;
+  }
+
+  /* footer */
+
+  .footer-img {
+    margin: 10rem 0 0 0;
+  }
+}
+
+/*******************************/
+/* Below 750px (smaller tablet) */
+/*******************************/
+
+@media (max-width: 46.9em) {
+  html {
+    /* 6/16= 0.375= 37.5% */
+    font-size: 37.5%;
+  }
+
+  /* .our-room-section {
+    padding: 10rem 1rem 0 1rem;
+  }
+
+  .about-us-con {
+    margin: 10rem 1rem 0 1rem;
+  }
+
+  .mision-section {
+    margin: 10rem 1rem 0 1rem;
+  }
+
+  .footer {
+    padding: 10rem 1rem 0 1rem;
+  } */
+
+  .img-play-btn {
+    width: 30%;
+  }
+
+  /* Rooms */
+}
+
+/*******************************/
+/* Below 544px (phones) */
+/*******************************/
+
+@media (max-width: 34em) {
+  /* Home */
+  .quote-text {
+    padding: 10rem 3rem 0 3rem;
+  }
+
+  .vid-text {
+    font-size: 3rem;
+  }
+
+  /* Rooms */
+  .hotel-rooms-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* contact */
+
+  .contact {
+    margin-top: 3rem;
+  }
+
+  .header {
+    padding: 4.4rem 3rem 4.4rem 3rem;
+  }
+
+  /* Home */
+
+  .our-room-section,
+  .footer {
+    padding: 10rem 3rem 0 3rem;
+  }
+
+  .about-us-con,
+  .mision-section {
+    margin: 10rem 3rem 0 3rem;
+  }
+
+  .hotel-room-section,
+  .facilities,
+  .contact-section {
+    padding: 20rem 3rem 12rem 3rem;
+  }
+}

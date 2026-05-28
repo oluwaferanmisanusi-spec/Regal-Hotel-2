@@ -1,0 +1,82 @@
+/*******************************/
+/* contact */
+/*******************************/
+
+.contact-section {
+  padding: 20rem 12rem 12rem 12rem;
+}
+
+.contact-section-text {
+  display: grid;
+}
+
+.contact {
+  display: flex;
+
+  gap: 3.2rem;
+  margin-top: 10rem;
+}
+
+.cont-seg-1 {
+  width: 95%;
+}
+
+.cnt-sub-cont-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cnt-sub-cont {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cnt-icon {
+  width: 2rem;
+}
+
+.cnt-cont-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.cont-numb {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.5;
+}
+
+.text-main-cnt {
+  margin-top: 3rem;
+  font-size: 2.2rem;
+  font-weight: 250;
+  line-height: 1.5;
+}
+
+.cont-seg-2 {
+  background-color: rgba(24, 25, 32, 1);
+  width: 100%;
+  padding: 5rem;
+}
+
+.sign-up-btn-2:link,
+.sign-up-btn-2:visited {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(239, 95, 37, 1);
+  text-decoration: none;
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.sign-up-btn-2:hover,
+.sign-up-btn-2:active {
+  background-color: #d75621;
+}
